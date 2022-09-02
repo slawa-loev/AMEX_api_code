@@ -9,7 +9,7 @@ app = FastAPI()
 
 @app.get("/predict")
 def predict(data):
-    model = pickle.load(open('pickles/pp_pred_pipe_gbc_new.pkl', 'rb'))
+    model = pickle.load(open('pickles/pp_pred_pipe_gbc_new1.pkl', 'rb'))
     param_data = json.loads(data)
     X_pred = DataFrame(param_data,index=[0]).replace('',np.nan)
 
@@ -40,12 +40,14 @@ def predict(data):
 
     if prediction == 1:
         defaulter = 'defaulter'
+        probability = round(pred_probability[0][1],3)
     else:
         defaulter = 'payer'
+        probability = round(pred_probability[0][0],3)
 
     return {'customer_ID':param_data['customer_ID'],
             'output':defaulter,
-            'probability':round(pred_probability[0][1],3)}
+            'probability':probability}
 
 
 @app.get("/")
