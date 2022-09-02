@@ -17,10 +17,13 @@ pytest
 yapf
 
 # API
-gcsfs
-google-cloud-storage
-mlflow
-s3fs
+# gcsfs
+# google-cloud-storage
+# mlflow
+# s3fs
+fastapi
+pickle
+json
 
 # utilities
 six>=1.14
