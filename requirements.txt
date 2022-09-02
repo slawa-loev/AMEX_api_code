@@ -22,8 +22,7 @@ yapf
 # mlflow
 # s3fs
 fastapi
-pickle
-json
+uvicorn
 
 # utilities
 six>=1.14
