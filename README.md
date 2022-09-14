@@ -1,12 +1,9 @@
-# Data analysis
-- Document here the project: AMEX_api_code
-- Description: Project Description
-- Data Source:
-- Type of analysis:
+# Le Wagon Data Science Bootcamp - Final Project
+- Analysed a 50GB Kaggle x Amercian Express competition dataset and put into production a machine learning model that predicted credit card default outcomes
 
-Please document the project the better you can.
 
-# Startup the project
+
+## Startup the project
 
 The initial setup.
 
